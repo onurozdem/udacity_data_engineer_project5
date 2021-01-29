@@ -106,7 +106,7 @@ load_time_dimension_table = LoadDimensionOperator(
 run_quality_checks = DataQualityOperator(
     task_id='Run_data_quality_checks',
     dag=dag,
-    control_tables_and_fields={"users":"userid"},
+    control_tables_and_fields={"users":"userid", "songs":"songid", "songplays":"playid"},
     redshift_conn_id="redshift",
 )
 
