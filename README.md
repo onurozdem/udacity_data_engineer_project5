@@ -56,7 +56,6 @@ In this project, used Airflow for orchestration etl processes. Airflow DAG archi
 
   > ![p4](pics/connection-aws-credentials.png)
  4. On the next create connection page, enter the following values:
-
    * **Conn Id**: Enter `redshift`.
    * **Conn Type**: Enter `Postgres`.
    * **Host**: Enter the endpoint of your Redshift cluster, excluding the port at the end. You can find this by selecting your cluster in the Clusters page of the Amazon Redshift console. See where this is located in the screenshot below. IMPORTANT: Make sure to NOT include the port at the end of the Redshift endpoint string.
